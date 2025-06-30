@@ -1,24 +1,484 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>the-crafted-cocktail-folio</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="the-crafted-cocktail-folio" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <title>Alex Morgan - Professional Bartender Portfolio</title>
+    <meta name="description" content="Professional bartender with 3 years of experience specializing in craft cocktails and exceptional customer service" />
+    <meta name="author" content="Alex Morgan" />
+    
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="Alex Morgan - Professional Bartender" />
+    <meta property="og:description" content="Professional bartender with 3 years of experience" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
+    
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">Alex Morgan</span>
+        </div>
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-section="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+          </li>
+        </ul>
+        
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+          </button>
+          
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/profile.jpg" alt="Alex Morgan - Professional Bartender" class="profile-img">
+          <div class="image-border"></div>
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Alex Morgan</span>
+            <span class="title-subtitle">Professional Bartender</span>
+          </h1>
+          <p class="hero-description">
+            Crafting exceptional cocktails and memorable experiences with 3 years of dedicated service in the hospitality industry.
+          </p>
+          <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">Learn More</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span class="scroll-text">Scroll Down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              With three years of hands-on experience in high-volume establishments, I've developed a passion for creating exceptional cocktails and providing outstanding customer service that keeps guests coming back.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">🍸</div>
+                <div class="highlight-content">
+                  <h3>Craft Cocktail Expertise</h3>
+                  <p>Specialized in classic and contemporary cocktails with emphasis on quality ingredients and presentation.</p>
+                </div>
+              </div>
+              
+              <div class="highlight-item">
+                <div class="highlight-icon">⚡</div>
+                <div class="highlight-content">
+                  <h3>High-Volume Service</h3>
+                  <p>Experienced in fast-paced environments, consistently maintaining quality while serving 200+ customers per shift.</p>
+                </div>
+              </div>
+              
+              <div class="highlight-item">
+                <div class="highlight-icon">🏆</div>
+                <div class="highlight-content">
+                  <h3>Customer Excellence</h3>
+                  <p>Dedicated to creating memorable experiences through personalized service and attention to detail.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Signature Cocktails</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">Mixology</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Classic Cocktails</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Craft Cocktails</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Wine Knowledge</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Beer & Spirits</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="category-title">Service</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Customer Service</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="98%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Multitasking</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">POS Systems</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Team Collaboration</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="certifications">
+          <h3 class="certifications-title">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-icon">🏅</div>
+              <span>ServSafe Alcohol Certification</span>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🏅</div>
+              <span>Responsible Beverage Service</span>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🏅</div>
+              <span>Mixology Professional Certificate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Bartender</h3>
+                <span class="timeline-date">2022 - Present</span>
+              </div>
+              <h4 class="timeline-company">The Metropolitan Lounge</h4>
+              <p class="timeline-description">
+                Lead bartender responsible for craft cocktail program, staff training, and maintaining the highest service standards. Increased bar revenue by 25% through innovative drink menu development.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Developed 15+ signature cocktails featured on seasonal menus</li>
+                <li>Trained and mentored 8 junior bartenders</li>
+                <li>Maintained 98% customer satisfaction rating</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Bartender</h3>
+                <span class="timeline-date">2021 - 2022</span>
+              </div>
+              <h4 class="timeline-company">Riverside Gastropub</h4>
+              <p class="timeline-description">
+                Full-service bartender in a high-volume restaurant environment, specializing in beer and wine service with growing cocktail expertise.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Served 150+ customers per shift during peak hours</li>
+                <li>Mastered extensive beer and wine menu (80+ selections)</li>
+                <li>Consistently exceeded daily sales targets</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Bar Back / Junior Bartender</h3>
+                <span class="timeline-date">2021 - 2021</span>
+              </div>
+              <h4 class="timeline-company">City Sports Bar</h4>
+              <p class="timeline-description">
+                Started as bar back and quickly promoted to junior bartender role. Learned fundamental bartending skills and customer service excellence.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Completed comprehensive bartending training program</li>
+                <li>Learned inventory management and cost control</li>
+                <li>Built strong foundation in customer service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What People Say</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="testimonials-carousel">
+          <div class="testimonial-item active">
+            <div class="testimonial-content">
+              <div class="quote-icon">"</div>
+              <p class="testimonial-text">
+                Alex consistently delivers exceptional service and creates the most incredible cocktails. His attention to detail and friendly personality make every visit memorable. He's become the reason we return to The Metropolitan Lounge week after week.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Sarah Mitchell</h4>
+                  <span class="author-title">Regular Customer</span>
+                </div>
+                <div class="testimonial-rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="quote-icon">"</div>
+              <p class="testimonial-text">
+                Working with Alex has been a pleasure. His professionalism, creativity, and ability to work under pressure make him an invaluable team member. He's elevated our cocktail program and trained our staff to new heights of excellence.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Michael Rodriguez</h4>
+                  <span class="author-title">Bar Manager, The Metropolitan Lounge</span>
+                </div>
+                <div class="testimonial-rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="quote-icon">"</div>
+              <p class="testimonial-text">
+                Alex catered our corporate event and it was absolutely flawless. His cocktails were the highlight of the evening, and his professional demeanor impressed all our clients. We'll definitely be booking him for future events.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Jennifer Park</h4>
+                  <span class="author-title">Event Coordinator, TechCorp</span>
+                </div>
+                <div class="testimonial-rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-navigation">
+          <button class="nav-dot active" data-slide="0"></button>
+          <button class="nav-dot" data-slide="1"></button>
+          <button class="nav-dot" data-slide="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Ready to elevate your bar experience? Let's discuss how I can contribute to your team or event.
+          </p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>alex.morgan.bartender@email.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>(555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Downtown Metropolitan Area</p>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <h3>Connect With Me</h3>
+              <div class="social-icons">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <span class="social-icon">💼</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <span class="social-icon">📷</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <span class="social-icon">🐦</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2024 Alex Morgan. All rights reserved.</p>
+          <p>Professional Bartender | Craft Cocktail Specialist | Customer Service Excellence</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
