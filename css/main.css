@@ -458,6 +458,7 @@ body {
   color: var(--text-secondary);
   margin-bottom: 40px;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .about-highlights {
@@ -1071,6 +1072,13 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+ .scroll-indicator {
+  display: none;
+}
+  }
+
+
 @media (max-width: 768px) {
   :root {
     --section-padding: 60px 0;
